@@ -27,6 +27,11 @@
 # include <math.h>
 #endif
 
+// Added by Piaoger to fix build error on Windows
+#ifdef WIN32
+# include <sys/types.h>
+#endif
+
 #include <limits.h>
 #include <float.h>
 #include <ctype.h>
